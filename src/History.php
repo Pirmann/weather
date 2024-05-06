@@ -28,8 +28,8 @@ class History
     }
     public function getDay($date):string{
         foreach($this->verlauf as $item){
-            if($item->getTag == $date){
-                return $item->getWeather;
+            if($item->getTag() === $date){
+                return $item->getWeather();
             }
         }
     }

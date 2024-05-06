@@ -1,10 +1,16 @@
 <?php
+
 namespace Pirmann\Weather;
 
 class Tag
 {
     private string $tag = '';
     private string $weather = '';
+
+    public function getWeather(): string
+    {
+        return $this->weather;
+    }
 
     public function getTag(): string
     {
